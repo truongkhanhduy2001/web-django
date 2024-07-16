@@ -57,9 +57,10 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'myproject.urls'
 
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles", "static")
+
 STATIC_URL = 'static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles", "static")
 
 TEMPLATES = [
     {

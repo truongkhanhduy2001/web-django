@@ -4,6 +4,7 @@ from django.http import JsonResponse
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 from collections import defaultdict, Counter
+from django.http import HttpResponse
 
 # FP-Growth Implementation
 class TreeNode:
@@ -116,7 +117,7 @@ def recommend(rules, transaction):
     return sorted_recs
 
 def index(request):
-    return JsonResponse( {'message': 'Hello, World!'}, safe=False)
+    return HttpResponse("Welcome to cc")
 
 
 transactions = []
